@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TribalWars</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TribalWars</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="topContainer">
+                    <div class="menu nowrap menu-village-standard" style="white-space: nowrap; ">
+                        <ul class="navbar-nav flex-grow-1">
+
+                            <li class="nav-item" style="height: 48px;">
+
+                                <a class="nav-link text-dark" asp-area="" asp-controller="General" asp-action="Index">
+                                    <span class="icon header overview"></span>
+                                    Visualização geral
+                                </a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <a class="nav-link text-dark" asp-area="" asp-controller="General" asp-action="Index">
+                                    <span class="icon header map2"></span>
+                                    Mapa
+                                </a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=report">
+                                    <span id="new_report" class="icon header new_report_faded"></span>
+                                    Relatórios
+                                    <span id="menu_report_count" class="badge badge-report"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- mail -->
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=mail">
+                                    <span id="new_mail" class="icon header new_mail_faded"></span>
+                                    Mensagens
+                                    <span id="menu_mail_count" class="badge badge-mail"></span>
+                                </a>
+                                <a id="manager_icon_farm" class="manager_icon tooltip-delayed" style="background-image:url('https://dsbr.innogamescdn.com/asset/edd53558/graphic/icons/farm_assistent.png')" href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=am_farm">&nbsp;</a>
+                                <a class="manager_icon tooltip-delayed" style="background-image:url('https://dsbr.innogamescdn.com/asset/edd53558/graphic/icons/account_manager.png')" href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=accountmanager">&nbsp;</a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- ranking -->
+                                <div class="bg">
+                                    <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking">Classificação</a>
+                                    <div class="rank">(<span id="rank_rank">3<span class="grey">.</span>180</span>.|<span id="rank_points">1<span class="grey">.</span>855</span> P)</div>
+                                    <table cellspacing="0" class="menu_column"><tbody><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=ally">Tribos</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=player">Jogadores</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=dominance">Dominância do mundo</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=con_ally">Tribos do continente</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=con_player">Jogadores do continente</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=kill_ally">Oponentes derrotados (tribo)</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=kill_player">Oponentes derrotados</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=awards">Realizações</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=in_a_day">Em um dia</a></td></tr><tr><td class="menu-column-item"><a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ranking&amp;mode=wars">Guerras da tribo</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></tbody></table>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- tribe -->
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ally">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                    Tribo
+                                    <span id="menu_counter_ally" class="badge badge-ally-forum"></span>
+                                </a>
+                                <div class="buttonicon">
+                                    <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=ally&amp;mode=forum" style="display:inline"><span id="tribe_forum_indicator" class="icon header no_new_post" title="Sem novas mensagens no fórum da tribo"></span></a>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- profile -->
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=info_player">
+                                    <span class="icon header profile"></span>
+                                    Perfil
+                                    <span id="menu_counter_profile" class="badge"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- premium -->
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=premium">
+                                    <span class="coinbag coinbag-header"></span>&nbsp;<span id="premium_points">410</span>
+                                    <span id="premium_points_buy"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="height: 48px;">
+
+                                <!-- settings -->
+                                <a href="https://br103.tribalwars.com.br/game.php?village=16930&amp;screen=settings">
+                                    <span class="icon header settings"></span>
+                                    Configurações
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - TribalWars - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

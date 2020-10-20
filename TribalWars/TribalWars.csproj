@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\unit_spear.png" />
+    <Content Remove="wwwroot\assets\unit_sword.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\saved\== BRA [103] %28381_453%29 - Tribal Wars - Mundo 103_files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\15.jpg" />
+    <None Include="wwwroot\assets\6.png" />
+    <None Include="wwwroot\assets\asyncjs.php" />
+    <None Include="wwwroot\assets\att.png" />
+    <None Include="wwwroot\assets\bd06b9b927f9f85956858362986bbcd9.jpg" />
+    <None Include="wwwroot\assets\coa_unknown.png" />
+    <None Include="wwwroot\assets\config_prepared.js.baixados" />
+    <None Include="wwwroot\assets\empty.png" />
+    <None Include="wwwroot\assets\error.png" />
+    <None Include="wwwroot\assets\game.css" />
+    <None Include="wwwroot\assets\game.js.baixados" />
+    <None Include="wwwroot\assets\game.pt_BR.js.baixados" />
+    <None Include="wwwroot\assets\gpt.js.baixados" />
+    <None Include="wwwroot\assets\lang.pt_BR.js.baixados" />
+    <None Include="wwwroot\assets\lg.php" />
+    <None Include="wwwroot\assets\loading.gif" />
+    <None Include="wwwroot\assets\loading2.gif" />
+    <None Include="wwwroot\assets\minus.png" />
+    <None Include="wwwroot\assets\overview.css" />
+    <None Include="wwwroot\assets\premium_plus.png" />
+    <None Include="wwwroot\assets\pubads_impl_2020092201.js.baixados" />
+    <None Include="wwwroot\assets\return_attack_medium.png" />
+    <None Include="wwwroot\assets\return_attack_small.png" />
+    <None Include="wwwroot\assets\return_knight.png" />
+    <None Include="wwwroot\assets\return_spy.png" />
+    <None Include="wwwroot\assets\select.png" />
+    <None Include="wwwroot\assets\support.png" />
+    <None Include="wwwroot\assets\throbber.gif" />
+    <None Include="wwwroot\assets\unit_axe.png" />
+    <None Include="wwwroot\assets\unit_light.png" />
+    <None Include="wwwroot\assets\unit_ram.png" />
+    <None Include="wwwroot\assets\unit_spear.png" />
+    <None Include="wwwroot\assets\unit_spy.png" />
+    <None Include="wwwroot\assets\unit_sword.png" />
+    <None Include="wwwroot\assets\VillageNotes.js.baixados" />
+    <None Include="wwwroot\assets\VillageOverview.js_" />
+  </ItemGroup>
+
+</Project>
