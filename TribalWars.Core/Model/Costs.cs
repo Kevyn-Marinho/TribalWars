@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TribalWars.Infrastructure.Database
+﻿namespace TribalWars.Core.Model
 {
     public class Costs
     {

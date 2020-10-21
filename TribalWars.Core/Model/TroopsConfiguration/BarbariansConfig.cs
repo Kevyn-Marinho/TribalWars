@@ -1,6 +1,6 @@
-﻿namespace TribalWars.Infrastructure.Database.TroopsConfiguration
+﻿namespace TribalWars.Core.Model.TroopsConfiguration
 {
-    public class BarbariansConfig : TroopConfig
+    public class BarbariansConfig : BaseTroops
     {
 
         /// <summary>

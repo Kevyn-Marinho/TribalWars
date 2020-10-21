@@ -11,7 +11,5 @@
         public int Points { get; private set; }
         public string Name { get; set; }
         public Troops Troops { get; set; }
-
-
     }    
 }

@@ -10,7 +10,5 @@
         public int HeavyCavalary { get; set; }
         public int Rams { get; set; }
         public int Catapults { get; set; }
-
     }
-
 }

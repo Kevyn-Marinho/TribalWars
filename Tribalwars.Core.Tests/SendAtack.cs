@@ -1,9 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TribalWars.Core.Interfaces.Services;
-using TribalWars.Core.Model;
 using TribalWars.Core.Model;
 using TribalWars.Services;
 
